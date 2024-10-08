@@ -1,0 +1,77 @@
+/*  All credits goes to Significo.com site for thier fonts 
+ */
+
+:root {
+    --salmon: salmon;
+    --salmon-light: #ef9d71;
+    --black: #000;
+    --white: #fff;
+    /* --cyan: #83b0ac; */
+    --cyan: #aedee0;
+    --dcyan: #112f2d;
+    --dsalmon: rgb(156, 64, 54);
+}
+
+*::selection {
+    background-color: var(--salmon-light);
+}
+
+@font-face {
+    font-family: "Pp_Neue_Machina, PPNeueMachina_Light Satoshi_Variable ";
+
+    src : 
+       url("C:/CodewithHarry/Web Development practice/Fonts Downloaded/659dbdfd5a080be8d348316e_PP Neue Machina Inktrap Medium.ttf") format("ttf"),
+       url("C:/CodewithHarry/Web Development practice/Fonts Downloaded/659dbdfd5a080be8d348316f_PPNeueMachina_ Light.ttf") format("ttf"),
+       url("C:/CodewithHarry/Web Development practice/Fonts Downloaded/659dbdfd5a080be8d3483173_Satoshi-Variable.ttf") format("ttf");
+}
+
+body[theme="black"]  {
+    background-color: var(--black);
+    
+}
+
+body{
+    font-family: "Pp_Neue_Machina, PPNeueMachina_Light Satoshi_Variable ";
+}
+
+body[theme="black"] .section {
+    /* background-color: #000; */
+    color: var(--white);
+}
+
+body[theme="cyan"] {
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section {
+    /* background-color: #83b0ac; */
+    color: var(--dcyan);
+}
+
+body[theme="salmon"] {
+    background-color: var(--salmon-light);
+}
+
+body[theme="salmon"] .section {
+    /* color: var(--salmon-light); */
+    color: var(--black);
+}
+
+body[theme="white"] {
+    background-color: var(--white);
+}
+
+body[theme="white"] .section {
+    color: rgb(88, 88, 88);
+}
+
+body{
+    transition: background-color ease-out .5s;
+}
+
+
+/* Animating the video */
+.vdodiv {
+    clip-path: circle(var(--clipvid) at 50% 50% ) ;
+
+}
