@@ -3,7 +3,7 @@
 function homepageAnimation() {
 
     gsap.set(".slidesm", {
-        scale: 12
+        scale: 11
     });
     
     const tl = gsap.timeline({
@@ -31,7 +31,7 @@ function homepageAnimation() {
     tl.to(".slidesm", {
         
         scale: 1,
-        ease: Power2,
+        ease: Power1,
     
     }, "a" )
     
